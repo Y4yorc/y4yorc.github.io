@@ -1,0 +1,16 @@
+current directory: /home/yayo/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20221220-41660-3m8ahp.rb extconf.rb
+creating Makefile
+
+current directory: /home/yayo/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= clean
+
+current directory: /home/yayo/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\=
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/yayo/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20221220-41660-rfu0xx
