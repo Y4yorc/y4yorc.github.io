@@ -3,7 +3,7 @@ title: Basic Documentation for Async Programming in Python
 published: true
 ---
 
-## Basics
+
 
 When a programmer is writing some code, usually is noted that a function requires to be executed, making 
 this code synchronous. Here's a basic example. 
@@ -27,7 +27,7 @@ be expected.) In this example, the output will be 9.
 
 * * *
 
-## Async Basics 
+ 
 
 However, there's another way to code in a simply way, when 2 (or more) functions are being executed at the same time, with different responses and 
 one after the other. I know this seems pretty confusing, so I'm gonna explain it to you in a more simple way. 
@@ -45,5 +45,7 @@ function, it is something like:
 async def main():
      # Code here
 ```
+
+
  
 
