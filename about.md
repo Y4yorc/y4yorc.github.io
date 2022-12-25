@@ -6,11 +6,11 @@ title: Who Am I?
 ### Yoooo Folks! I'm Luis De León, best known as Yayo or Elyayoveloz (or Celfeercho too). This is my welcome to my porfolio and feel free to explore it. 
 
 Connect with me folks:
-- Twitter (dev): Elyayoveloz
-- Twitter (main): Celfeercho
-- GitHub: Its-Yayo
-- YT: @yayoteplaticare
-- LinkedIn: Luis De León
+- [Twitter (dev)](https://twitter.com/elyayoveloz)
+- [Twitter (main)](https://twitter.com/celfeercho)
+- [GitHub](https://github.com/Its-Yayo)
+- [YT](https://www.youtube.com/channel/UC_bHbAMGcm1yLguVWJNUyLg/featured)
+- [LinkedIn](https://www.linkedin.com/in/luis-de-le%C3%B3n-a2b3bb245/)
 
 I'm from Mexico and I'm currently studying in Tecnológico de Monterrey CEM (Campus Estado de México)
  
