@@ -66,7 +66,7 @@ patching 'em. This is what is known as Pentesting. Because of this, these topics
 - Cryptography
 - Buffer Overflows
 
-And there's more!, but now, my lab has 3 VM's with Windows XP (no encrypt), 7 (encrypt) and 10 (encrypt) and 1 VM running Kali Linux with GNOME 42.0. (Updated to Dec 21)
-
+And there's more!, but now, my lab has 3 VM's with Windows XP (no encrypt), 7 (encrypt) and 10 (encrypt) and 1 VM running Kali Linux with GNOME 42.0. (Updated to Dec 25). Also, I store my VM'S
+in VMware Workstation Pro and VMware Player for fast tests
 
 
