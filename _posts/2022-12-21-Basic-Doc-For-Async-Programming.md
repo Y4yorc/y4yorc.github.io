@@ -45,7 +45,7 @@ function, it is something like:
 async def main():
      # Code here
 ```
-Now, in order to code asynchronous programming, is important to import a library called ```asyncio```, which provides high-level APIs, structured network code and asynchronous framweorks. You
+Now, in order to code asynchronous programming, is important to import a library called ```asyncio```, which provides high-level APIs, structured network code and asynchronous frameworks. You
 can find more information about this library [here](https://docs.python.org/3/library/asyncio.html).
 
 
