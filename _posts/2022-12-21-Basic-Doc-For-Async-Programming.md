@@ -98,8 +98,20 @@ await asyncio.sleep(0.5)
 ```
 This snippet code seems pretty easy to understand, but hold up, not too fast eh.  ```time``` (another Python module) already has a similar method, named  ```time.sleep()```. Ok, so what's the main difference? Yeah, one's for async threads and the other one for a single-thread code. Mmm, not so close, because we are talking about something really important. 
 
-If we use ```time.sleep()```, we are suspending a whole single-thread execute until with an specific time range. 
+If we use ```time.sleep()```, we are suspending a whole single-thread execute until with an specific time range. In simple words, the code will just do nothing during the specified time. However, ```asyncio.sleep()``` works slightly different, considering we're coding async code. Assuming we have multiple-thread tasks, this method will allow us to suspend an event while there's a loop running at the same time. This means that there's a loop stopped while an await statement finishes it's execution. 
 
+In our example, we have just little time setted, but this is useful when we code lots of tasks and we wanna set loop-running events suspended or doing something else while the main execute finishes. 
+
+Now, see at the final code block. 
+
+```python
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Here's a useful [doc](https://realpython.com/if-name-main-python/) why ```if __name__ == "__main__"``` is so important in Python and why we should include this in all our Python codes. We should look what we can see next. 
+
+As I wrote before, you need to call a function to be executed, otherwise, it will be more statically than useful. (Yea, your code will impress even a farmer lol). Well, a programmer knows this and it's important in any compilated/interpreted programming language. In Python,  we call any function by the function's name and the main args if it has. In the first example, I typed ```main()``` to call the main function, so refering as the last example, we can suppose that we call it like in the first example. Is this true?
 
 
 
