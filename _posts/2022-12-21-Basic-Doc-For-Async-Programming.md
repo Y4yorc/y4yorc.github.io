@@ -84,6 +84,30 @@ $
 And yea, I can read your mind and I'd say you have no idea what I just code. Lemme explain you better. In case you have some experience
 with Python, you can see that the first function is just returning an string object. In the main function we are calling it but, there's something new for non-async programmers and that's known as Task-based Asynchronous Pattern (TAP), using async/await syntax. 
 
+The concept ```await``` is used as a key word to control a loop passed as an event. Both synchronous and asynchronous uses tasks perfomed while the whole code is executed. The only main difference between being sync and async is the code's threads, so referering to the explanation at the beginning of this doc, a sync code has only one thread, while an async code has multiple threads because of a code block's awaiting. 
 
- 
+In the previous example, we have some asyncio's methods and this is trully important. That will allow us to make a code asynchronous and there are plenty of methods you as a programmer can use, but just let's take a look. 
+
+```python
+print(await asyncio.gather(test(word="Hello")))
+```
+What we are doing in this sniṕpet code? First, let's define what does  ```asyncio.gather()``` means. Asyncio provides this method to call awaitable objects together. In our example, it doesn't make too sense because we are using just one object to call  ```test(word: str)``` and it's just one arg, but it's useful when we have +2 objects calling 'em at the same time. I've got this well-written [doc](https://superfastpython.com/asyncio-gather/) for you if you wanna play with gathering objects. 
+
+```python
+await asyncio.sleep(0.5)
+```
+This snippet code seems pretty easy to understand, but hold up, not too fast eh.  ```time``` (another Python module) already has a similar method, named  ```time.sleep()```. Ok, so what's the main difference? Yeah, one's for async threads and the other one for a single-thread code. Mmm, not so close, because we are talking about something really important. 
+
+If we use ```time.sleep()```, we are suspending a whole single-thread execute until with an specific time range. 
+
+
+
+
+
+In async programming, we count with 3 main objects:
+- Tasks
+- Courutines
+- Futures
+
+
 
