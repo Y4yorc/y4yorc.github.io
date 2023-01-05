@@ -6,7 +6,7 @@ I'll be updating it with all stuff I'll learn
 To store the repo in your local, make sure you follow the following commands:
 
 ```
-$ git clome https://github.com/Its-Yayo/its-yayo.github.io.git
+$ git clone https://github.com/Its-Yayo/its-yayo.github.io.git
 $ cd its-yayo.github.io
 ```
 To update all changes, type:
