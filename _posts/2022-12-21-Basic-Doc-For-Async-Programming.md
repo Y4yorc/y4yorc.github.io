@@ -113,7 +113,7 @@ Here's a useful [doc](https://realpython.com/if-name-main-python/) why ```if __n
 
 As I wrote before, you need to call a function to be executed, otherwise, it will be more statically than useful. (Yea, your code will impress even a farmer lol). Well, a programmer knows this and it's important in any compilated/interpreted programming language. In Python,  we call any function by the function's name and the main args if it has. In the first example, I typed ```main()``` to call the main function, so refering as the last example, we can suppose that we call it like in the first example. Is this true?
 
-
+ 
 
 
 In async programming, we count with 3 main objects:
