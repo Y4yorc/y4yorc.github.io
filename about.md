@@ -15,11 +15,13 @@ Connect with me folks:
 I'm from Mexico and I'm currently studying in Tecnológico de Monterrey CEM (Campus Estado de México)
  
 I have lots of hobbies, here's a few of 'em:
-- Bowling
+- Bowling (Firstly it was more for chill, but now I'm taking it more seriously. I use 2-handed style and my current max score is 136, updated to Jan 13 2023)
+- Chess (I love playing chess, now I'm playing it more seriously to dominate it. I often play a classical 30+0 but sometimes I play blitz 10+0 and 10+3)
 - Drawing and writing 
-- I read a lot
-- Often I play FPS games (once I played tryharded and got into some tournaments lol)
-- I can compose some basic Heavy Metal riffs
+- I read a lot (Hacking and programming books in a mod, growing and motivational books in an another mod. I like fantasy and historical books too)
+- Often I play FPS games (once I played tryharded and got into some tournaments lol). When I have enough time, I play COD Mobile, PUBG Mobile, Critical Ops and CSGO. 
+- I can compose some basic Heavy Metal riffs (Fav bands: Iron Maiden, Metallica, Anthrax, Slayer, Overkill, DRI, Black Sabbath, Deep Purple, KISS, Dokken, Cinderella, Stratovarius, Rhapsody, 
+Skull Fist...) 
 - I like to assemble things like legos or bricks. 
 - Learn new languages (Currently I speak spanish, english, 2/3 french and some basic italian and german)
 - I love cars and motorsport, so when I was little I used to play with scale cars. Now, I collect 'em. 
@@ -51,22 +53,25 @@ my knowledge. Here's what I'm studying right now:
 - Blockchain and Crypto 
 
 For instance, with this knowledge I'm moving into something bigger, which is the Security. An ethical hacker has the responsability to detect those explots made because of bugs or code errors, 
-patching 'em. This is what is known as Pentesting. Because of this, these topics are fundamental into my career, what I'm still studying:
+patching 'em. I like CTF games, that's where I can develop and think more patiently to solve a problem with logic and calm. Still in process to win some ones. Because of this, these topics are fundamental into my career, what I'm still studying:
 - Networking Environments (OSI Model, WAN, MAN...)
-- Pentesting and Pivoting 
+- OSCP, OSCE, eCPPT, eCPPTv2, CEH, LPT, GPEN (In every one I'll get a certificate)
+- Pentesting, pivoting and tunneling
 - Active and transversal Directory
+- Bug Bounty
 - SET (Social Engineering Toolkit)
 - Get deeper with some collabs with OWASP (Open Web Application Security Project)
 - Privilage Escalation
 - Reverse Shell (Linux/Windows)
+- Reverse Engineering (Most popular tool is BurpSuite PortSwigger)
 - File transfers
 - 80, 443 (Burp Response, Apache Exploiting, htaccess and htpasswd, HTTP requests, Parameter fuzzing, Burp Spider)
 - SQL Injection
-- Port Scanning and listening with nmap and ncat 
+- Port scanning and listening with nmap and ncat 
 - Cryptography
 - Buffer Overflows
 
-And there's more!, but now, my lab has 3 VM's with Windows XP (no encrypt), 7 (encrypt) and 10 (encrypt) and 1 VM running Kali Linux with GNOME 42.0. (Updated to Dec 25). Also, I store my VM'S
-in VMware Workstation Pro and VMware Player for fast tests
+And there's more!, but now, my lab has 3 VM's with Windows XP (no encrypt), 7 (encrypt) and 10 (encrypt) and 1 VM running Kali Linux with GNOME 42.0. (Updated to Dec 25 2022). Also, I store my VM'S
+in VMware Workstation Pro and VMware Player for fast tests.
 
 
