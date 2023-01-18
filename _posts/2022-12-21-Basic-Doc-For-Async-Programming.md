@@ -111,15 +111,36 @@ if __name__ == "__main__":
 
 Here's a useful [doc](https://realpython.com/if-name-main-python/) why ```if __name__ == "__main__"``` is so important in Python and why we should include this in all our Python codes. We should look what we can see next. 
 
-As I wrote before, you need to call a function to be executed, otherwise, it will be more statically than useful. (Yea, your code will impress even a farmer lol). Well, a programmer knows this and it's important in any compilated/interpreted programming language. In Python,  we call any function by the function's name and the main args if it has. In the first example, I typed ```main()``` to call the main function, so refering as the last example, we can suppose that we call it like in the first example. Is this true?
+As I wrote before, you need to call a function to be executed, otherwise, it will be more statically than useful. (Yea, your code will impress even a farmer lol). Well, a programmer knows this and it's important in any compilated/interpreted programming language. In Python,  we call any function by the function's name and the main args if it has. In the first example, I typed ```main()``` to call the main function, so refering as the last example, we can suppose that we call it like in the first example. Is this true? 
 
- 
+Check what happens if we run our code with ```main()``` instead of ```asyncio.run(main())```:
 
+```
+$ python3 some_code.py
+/home/user/some_code.py:32: RuntimeWarning: coroutine 'main' was never awaited
+  main()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+$
+```
+In simple words, the ```main()``` function is not actually awaited due of not being really a concurrent task, calling it as a not regular asynchronous function. If u are a curious programmer, ```tracemalloc``` is just a Python debugger module to trace memory blocks disabled. Check [this](https://docs.python.org/3/library/tracemalloc.html) for more info. 
 
-In async programming, we count with 3 main objects:
-- Tasks
-- Courutines
-- Futures
+Now, remember that each object is stored in a memory location. In C/C++, pointers are really important, they allow us a programmers to know where is our object. I'm not going to write C/C++ code here because is not the main objective, but in Python, we can note that every async objects is allocated in a memory location once I already setted in my code. 
+
+Also, I'ma tell you that the ```await``` key word is not valid if we wanna code an awaiting object outside the async function, so it's important to take this in consideration. This is the error showed in your console:
+
+```
+$ python3 some_code.py
+File "/home/user/some_code.py", line 12
+    await main()
+    ^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+$
+```
+Now, after all of this, I need to set an object while another object is being executed and it's already noted that this is an asynchronous code with multiple threads setted on. 
+
+I need you to understand this, because this will solve our doubt why we use ```asyncio.run(main())``` to run our function, so in order to this, let's introduce a new important object based on TAP. A courutine is an object used in async programming to be scheduled in case of suspending it and then being executed again. Is based on our syntax we stablished before (async/await), so at the time we are scheduling an object, we are scheduling a courutine to be awaited in case we wanna do it (Usually yes). 
+
+At the order we setted all our async functions, there is something known as an async event-loop. 
 
 
 
