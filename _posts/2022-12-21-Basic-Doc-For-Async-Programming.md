@@ -186,7 +186,7 @@ Looped task 4 Done
 Time finished at:  10:29:40
 $
 ```
-In this snippet code, I'm showing you how to create a task with asyncio using ```asyncio.create_task()```. 
+In this snippet code, I'm showing you how to create a task with asyncio using ```asyncio.create_task()```, and showing you when a task is being either awaited or executed. 
 
 
 
