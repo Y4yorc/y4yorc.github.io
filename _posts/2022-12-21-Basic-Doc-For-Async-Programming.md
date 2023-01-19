@@ -138,9 +138,58 @@ $
 ```
 Now, after all of this, I need to set an object while another object is being executed and it's already noted that this is an asynchronous code with multiple threads setted on. 
 
-I need you to understand this, because this will solve our doubt why we use ```asyncio.run(main())``` to run our function, so in order to this, let's introduce a new important object based on TAP. A courutine is an object used in async programming to be scheduled in case of suspending it and then being executed again. Is based on our syntax we stablished before (async/await), so at the time we are scheduling an object, we are scheduling a courutine to be awaited in case we wanna do it (Usually yes). 
+I need you to understand this, because this will solve our doubt why we use ```asyncio.run(main())``` to run our function, so in order to this, let's introduce a new important object based on TAP. A coroutine is an object used in async programming to be scheduled in case of suspending it and then being executed again. It's based on our syntax we stablished before (async/await), so at the time we are scheduling an object, we are scheduling a coroutine to be awaited in case we wanna do it (Usually yes). Also, as I mentioneed before in this doc, there's an event-loop running while a function is being awaited, due of having multiple threads. At this point, we can call 'em as subroutines, because at the end, it's just a sequence of instructions performing a specific task. 
 
-At the order we setted all our async functions, there is something known as an async event-loop. 
+```asyncio.run(main())``` let us to run a event-loop coroutine in order for each function awaited, then to be executed.
+
+***
+
+I mentioned what's a task and how it's performed during an execution inside an async block code. But now we run into another doubt: Is it possible to create our own tasks, avoiding an unquote object blocked by an another awaitable object? Or in simple words: Execute a task while another is awaiting? Yes and I'm gonna show you:
+
+```python
+import asyncio
+import time
+
+async def test(word: str):
+    print(word)
+    await asyncio.sleep(1)
+
+async def main():
+    print("Time started at: ", time.strftime('%X'))
+    
+    print("Task 1 Done")
+    task_created = asyncio.create_task(test(word="Task 2 Done"))
+    print("Task 3 Done")
+
+    await asyncio.sleep(1)
+
+    for i in range(0, 3):
+        print("Looped task 4 Done")
+    
+    print("Time finished at: ", time.strftime('%X'))
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+This is what your console should show:
+
+```
+$ python3 some_code.py
+Time started at:  10:29:39
+Task 1 Done
+Task 3 Done
+Task 2 Done
+Looped task 4 Done
+Looped task 4 Done
+Looped task 4 Done
+Time finished at:  10:29:40
+$
+```
+In this snippet code, I'm showing you how to create a task with asyncio using ```asyncio.create_task()```. 
+
+
+
 
 
 
