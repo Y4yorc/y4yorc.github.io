@@ -36,8 +36,7 @@ def sum_numbers(x, y):
 ```
 
 From the previous example, we can note that there's a return value. However, we're not calling the function, so there will be no output. When this function is being called 
-while another function is running, this is what is known as asynchronous code. In Python (and JavaScript), it's being denoted by the key word ```async```. So, refering as a main 
-function, it is something like: 
+while another function is running, this is what is known as asynchronous code. In Python (and JavaScript), it's being denoted by the key word ```async```. So, refering as a main function, it is something like: 
 
 ```python
 async def main():
