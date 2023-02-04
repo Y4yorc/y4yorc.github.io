@@ -57,5 +57,14 @@ $
 Very simple. It's just a conditional statement outputing something, but to put u in reference, there's no a loop conditional inside a block of code we need to execute, so it takes less than 14 nanoseconds to output a string object. If u don't understand what are the main function's args, check this [doc](https://linuxhint.com/argc-argv-cpp/), it's the same for C and C++. 
 
 
+### O(Log(N))
+
+This time complexity is often confused with the O(1) runtime complexity, but it's not as close as you think, because in this complexity, a programmer is are aware of how much times he needs to iterate an object. This means that it's not necessary to iterate the whole object as a linear algorithm (more about this below), but it's better than that:
+
+Let's do some maths. Imagine you have an array of 10 elements and you wanna find one of these elements but u don't know in which index it is. What we can do? 
+
+
+
+
 
 
