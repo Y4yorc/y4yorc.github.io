@@ -10,4 +10,10 @@ Wanna make a pizza? You need some ingredients (Which from now, I'm gonna call 'e
 
 In programming, it works similar, but at the time we are coding, we can figure out why our code is taking so much long time to execute, compile, etc. Or the opposite way: Why our code is running so fast, even before noticing how many code lines we wrote?
 
+That's a hard truth when we are talking about algorithms. I know that debugging a +10000 line code program is really difficult, frustating and also takes a lot of time in terms of releasing a project or adding new updates to a project. To avoid that (or maybe, to invest better our time doing more effectively code) is to think how we can solve an specific problem in less time possible. 
+
+To measure it, we as programmers use something we call Time Complexity. And yea, the less tasks needed to be done, better. And it's not the actual time required to execute a task. That could be often confused 
+
+
+
 

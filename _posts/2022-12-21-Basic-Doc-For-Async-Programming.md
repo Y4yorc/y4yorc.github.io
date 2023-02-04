@@ -3,8 +3,6 @@ title: Basic Documentation for Async Programming in Python
 published: true
 ---
 
-
-
 When a programmer is writing some code, usually is noted that a function requires to be executed, making 
 this code synchronous. Here's a basic example. 
 
