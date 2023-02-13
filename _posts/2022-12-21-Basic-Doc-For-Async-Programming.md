@@ -49,6 +49,7 @@ That's very important at the time we need to schedule a function that's needed t
 before, you need to code a sequence of statements inside a block of code. To add more fundamental concepts related to this, first check this snippet code:
 
 ```python
+# By Yayo
 import asyncio
 import time
 
@@ -144,6 +145,7 @@ I need you to understand this, because this will solve our doubt why we use ```a
 I mentioned what's a task and how it's performed during an execution inside an async block code. But now we run into another doubt: Is it possible to create our own tasks, avoiding an unquote object blocked by an another awaitable object? Or in simple words: Execute a task while another is awaiting? Yes and I'm gonna show you:
 
 ```python
+# By Yayo
 import asyncio
 import time
 
