@@ -38,7 +38,7 @@ Check this simply code:
 int main(int argc, char* argv[]) {
     int number = 4;
     
-    if(number < 5) {
+    if (number < 5) {
         printf("This number is lower than 5\n");
     } else {
         printf("This number is higher than 5\n");
