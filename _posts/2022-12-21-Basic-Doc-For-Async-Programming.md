@@ -187,8 +187,6 @@ $
 ```
 In this snippet code, I'm showing you how to create a task with asyncio using ```asyncio.create_task()```, and showing you when a task is being either awaited or executed. 
 
-
-
-
+```asyncio.create_task()``` is a method that allows us to create a task, but it's important to note that this method is not a coroutine, so we can't await it. 
 
 
